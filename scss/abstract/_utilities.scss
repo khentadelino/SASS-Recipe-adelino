@@ -1,0 +1,114 @@
+@use "./colors" as *;
+
+$colors: (
+  "dark": $clr--dark,
+  "light": $clr--light,
+);
+
+@each $key, $val in $colors {
+  .text {
+    &--#{$key} {
+      color: $val;
+    }
+  }
+
+  .bg {
+    &--#{$key} {
+      background-color: $val;
+    }
+  }
+}
+
+$text-align: left, right, center, justify;
+@each $val in $text-align {
+  .t-align--#{$val} {
+    text-align: $val;
+  }
+}
+
+$display: block, inline, inline-block, grid, flex;
+@each $val in $display {
+  .d--#{$val} {
+    display: $val;
+  }
+}
+
+$position: absolute, relative, static, fixed;
+
+@each $val in $display {
+  .position--#{$val} {
+    position: $val;
+  }
+}
+
+@for $i from 0 through 20 {
+  // Sets margin on all sides
+  .m--#{$i} {
+    margin: $i + rem;
+  }
+
+  // Sets horizontal margin (left & right)
+  .mx--#{$i} {
+    margin: 0 $i + rem;
+  }
+
+  // Sets vertical margin (top & bottom)
+  .my--#{$i} {
+    margin: $i + rem 0;
+  }
+
+  // Sets margin-bottom
+  .mb--#{$i} {
+    margin-bottom: $i + rem;
+  }
+
+  // Sets margin-top
+  .mt--#{$i} {
+    margin-top: $i + rem;
+  }
+
+  // Sets margin-left
+  .ml--#{$i} {
+    margin-left: $i + rem;
+  }
+
+  // Sets margin-right
+  .mr--#{$i} {
+    margin-right: $i + rem;
+  }
+
+  // Sets padding on all sides
+  .p--#{$i} {
+    padding: $i + rem;
+  }
+
+  // Sets horizontal padding (left & right)
+  .px--#{$i} {
+    padding: 0 $i + rem;
+  }
+
+  // Sets vertical padding (top & bottom)
+  .py--#{$i} {
+    padding: $i + rem 0;
+  }
+
+  // Sets padding-bottom
+  .pb--#{$i} {
+    padding-bottom: $i + rem;
+  }
+
+  // Sets padding-top
+  .pt--#{$i} {
+    padding-top: $i + rem;
+  }
+
+  // Sets padding-left
+  .pl--#{$i} {
+    padding-left: $i + rem;
+  }
+
+  // Sets padding-right
+  .pr--#{$i} {
+    padding-right: $i + rem;
+  }
+}
