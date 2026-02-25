@@ -1,8 +1,10 @@
 @use "./colors" as *;
 
 $colors: (
-  "dark": $clr--dark,
-  "light": $clr--light,
+  "primary": $clr--primary,
+  "secondary":$clr--secondary,
+  "dark": $clr--light,
+  "light": $clr--dark,
 );
 
 @each $key, $val in $colors {

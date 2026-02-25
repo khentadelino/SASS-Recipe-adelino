@@ -8,14 +8,14 @@
   font-size: 1rem;
   text-transform: uppercase;
   transition: 0.5s ease;
-  &.btn--light {
-    background-color: $clr--light;
-    color: $clr--dark;
-    border-color: $clr--dark;
+  &.btn--primary {
+    background-color: $clr--primary;
+    color: #ffffff;
+    border-color: $clr--primary;
     &:hover {
-      background-color: $clr--dark;
-      color: $clr--light;
-      border-color: $clr--light;
+      background-color: #ffffff;
+      color: $clr--primary;
+      border-color: $clr--primary;
       transition: 0.5s ease;
     }
   }
@@ -43,6 +43,6 @@
   }
 }
 .btn--text {
-  color: $clr--light;
+  color: $clr--dark;
   transition: 0.5s ease;
 }

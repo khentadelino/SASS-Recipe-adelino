@@ -1,114 +1,32 @@
 @use "../abstract/" as *;
+@use "../base/" as *;
 
 .homeBanner {
   padding: 4rem 0;
+  background-color: $clr--secondary;
   &__wrapper {
-    color: $clr--light;
-    @include gridFixed(2, 1rem);
-    align-items: center;
-    @include mediaQuery(520px) {
-      grid-template-columns: 1fr;
-      text-align: center;
-      padding-top: 6rem;
-    }
-  }
-
-  &__left {
-    small {
-      text-transform: uppercase;
-    }
-
-    h1 {
-      line-height: 4rem;
-      margin: 2rem 0;
-    }
-
-    p {
-      margin-bottom: 2rem;
-    }
-  }
-}
-
-.homeAbout {
-  padding: 4rem 0;
-  &__wrapper {
-    @include gridFixed(2, 3rem);
-    align-items: center;
-    @include mediaQuery(520px) {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-    @include mediaQuery(520px) {
-    }
-  }
-  &--a {
-    grid-area: a;
-  }
-  &--b {
-    grid-area: b;
-  }
-  &--c {
-    grid-area: c;
-  }
-  &__left {
-    ul {
-      display: grid;
-      grid-template-areas:
-        "a c"
-        "b c";
-      align-items: center;
-      gap: 1rem;
-    }
-  }
-
-  &__right {
-    h2 {
-      margin-bottom: 1rem;
-    }
-    p {
-      margin-bottom: 2rem;
-    }
-  }
-}
-
-.homeClass {
-  padding: 4rem 0;
-  &__slider {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 4rem;
   }
-
-  .listButton {
-    margin-top: 2rem;
-    @include centerAll;
-  }
-}
-
-.homeTrainer {
-  padding: 4rem 0;
-  &__title {
-    @include between;
-    margin-bottom: 2rem;
+  &__left {
+    max-width: 39rem;
+    small {
+      font-family: $font-primary;
+      font-size: 0.9rem;
+      color: $clr--primary;
+      letter-spacing: 0.7rem;
+    }
     h2 {
-      max-width: 40rem;
+      margin: 1rem 0;
+      font-family: $font-secondary;
+      font-weight: 600;
+      color: $clr--dark;
+      max-width: 35rem;
     }
-    @include mediaQuery(520px) {
-      flex-direction: column;
-      justify-content: center;
-      gap: 1rem;
-      h2 {
-        text-align: center;
-      }
-    }
-  }
-
-  &__cards {
-    @include gridFixed(3, 1rem);
-    @include mediaQuery(520px) {
-      grid-template-columns: 1fr;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
+    p {
+      margin: 1rem 0 2rem;
+      color: $clr--dark;
     }
   }
 }
