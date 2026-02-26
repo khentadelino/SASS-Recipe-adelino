@@ -1,1 +1,55 @@
 @use "../abstract/" as *;
+@use "../base/" as *;
+
+.cards {
+  padding: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  // display: flex;
+  // flex-direction: row;
+  // gap: 1rem;
+  // align-items: flex-start;
+
+  img {
+    width: 8rem;
+    height: 100%;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    small {
+      padding-top: 0.5rem;
+    }
+    h4 {
+      font-family: $font-secondary;
+      color: $clr--dark;
+      margin: 1rem 0;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      padding-bottom: 0.5rem;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        i {
+          color: $clr--primary;
+        }
+      }
+    }
+
+    a {
+      color: $clr--dark;
+    }
+  }
+}
