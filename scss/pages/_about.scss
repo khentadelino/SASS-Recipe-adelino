@@ -26,6 +26,24 @@
       top: 2rem;
     }
   }
+  @include mediaQuery(520px) {
+    height: 25rem;
+    margin-bottom: 3rem;
+    padding: 3rem 1.5rem;
+
+    &__wrapper {
+      padding: 5rem 0;
+
+      h2 {
+        margin-bottom: 1.5rem;
+      }
+
+      img {
+        height: auto;
+        top: 0;
+      }
+    }
+  }
 }
 
 .aboutRecipe {
@@ -34,6 +52,11 @@
     padding: 2rem 0;
     display: flex;
     gap: 2rem;
+
+    @include mediaQuery(520px) {
+      flex-direction: column;
+      padding: 2rem;
+    }
   }
   &__left {
     width: 70%;
@@ -48,6 +71,10 @@
 
     address {
       padding: 2rem 0;
+    }
+
+    @include mediaQuery(520px) {
+      width: unset;
     }
   }
 

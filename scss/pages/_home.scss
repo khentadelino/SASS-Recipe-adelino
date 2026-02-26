@@ -8,6 +8,11 @@
     display: flex;
     align-items: center;
     gap: 4rem;
+
+    @include mediaQuery(520px) {
+      padding-top: 5rem;
+      flex-direction: column;
+    }
   }
   &__left {
     max-width: 39rem;
@@ -77,6 +82,9 @@
         text-align: justify;
       }
     }
+    @include mediaQuery(520px) {
+      @include gridFixed(1, 1rem);
+    }
   }
 }
 
@@ -114,6 +122,9 @@
     &--item {
       @include gridFixed(2, 2rem);
       align-items: center;
+      @include mediaQuery(520px) {
+        @include gridFixed(1, 1rem);
+      }
       &--right {
         align-items: center;
 
@@ -168,6 +179,9 @@
   &__display {
     @include gridFixed(3, 2rem);
     align-items: center;
+    @include mediaQuery(520px) {
+      @include gridFixed(1, 0.5rem);
+    }
     .cards {
       width: 100%;
     }

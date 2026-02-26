@@ -4,6 +4,7 @@
 .header {
   padding: 2rem 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
 
   &__wrapper {
     @include between;
@@ -86,7 +87,7 @@
 
     &__nav {
       ul {
-        background-color: $clr--light;
+        background-color: #ffffff;
         height: 100vh;
         width: 100%;
         position: fixed;
