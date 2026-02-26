@@ -2121,6 +2121,33 @@ img {
   flex-direction: column;
   gap: 1rem;
 }
+@media screen and (max-width: 520px) {
+  .recipeBanner {
+    height: auto;
+    margin-bottom: 5rem;
+    padding: 8rem 1.5rem;
+  }
+  .recipeBanner__title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .recipeBanner__title h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .recipeBanner__subtitle {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .recipeBanner__ingredients {
+    flex-direction: column;
+  }
+  .recipeBanner__ingredients .details {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
 
 .recipeBody {
   padding: 4rem 0;
@@ -2192,6 +2219,24 @@ img {
 }
 .recipeBody__right--recipes .cards {
   padding: unset;
+}
+@media screen and (max-width: 520px) {
+  .recipeBody {
+    padding: 2rem 1.5rem;
+  }
+  .recipeBody__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .recipeBody__left {
+    width: unset;
+  }
+  .recipeBody__video iframe {
+    width: 450px;
+  }
+  .recipeBody h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .tns-outer {
