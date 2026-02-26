@@ -1426,21 +1426,17 @@ img {
 }
 .cards img {
   width: 8rem;
-  height: 100%;
+  height: 10rem;
 }
 .cards__details {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.5rem;
-}
-.cards__details small {
-  padding-top: 0.5rem;
 }
 .cards__details h4 {
   font-family: "Playfair Display", serif;
   color: #666666;
-  margin: 1rem 0;
+  margin: 5px 0;
 }
 .cards__details p {
   line-height: 1.5;
@@ -1448,7 +1444,6 @@ img {
 .cards__details ul {
   display: flex;
   align-items: center;
-  padding-bottom: 0.5rem;
 }
 .cards__details ul li {
   display: flex;
@@ -1839,6 +1834,271 @@ img {
 }
 .classicCollection__display .cards {
   width: 100%;
+}
+
+.aboutBanner {
+  background-color: #f9e9d7;
+  height: 50rem;
+  margin-bottom: 10rem;
+  padding: 4rem 0;
+  position: relative;
+}
+.aboutBanner__wrapper {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutBanner__wrapper h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.aboutBanner__wrapper img {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  top: 2rem;
+}
+
+.aboutRecipe {
+  padding: 4rem 0;
+}
+.aboutRecipe__wrapper {
+  padding: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+.aboutRecipe__left {
+  width: 70%;
+}
+.aboutRecipe__left h1 {
+  font-family: "Playfair Display", serif;
+  padding: 1rem 0;
+}
+.aboutRecipe__left p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.aboutRecipe__left address {
+  padding: 2rem 0;
+}
+.aboutRecipe__right {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.aboutRecipe__right h4 {
+  font-family: "Playfair Display", serif;
+  padding: 1rem 0;
+  color: #d9964a;
+}
+.aboutRecipe__right .cards {
+  padding: unset;
+}
+
+.contactBanner {
+  background-color: #f9e9d7;
+  height: 50rem;
+  margin-bottom: 15rem;
+  padding: 4rem 0;
+  position: relative;
+}
+.contactBanner__wrapper {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactBanner__wrapper h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contactBanner__wrapper img {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  top: 2rem;
+}
+
+.contactDetails {
+  padding: 4rem 0;
+}
+.contactDetails__wrapper {
+  display: flex;
+  gap: 2rem;
+}
+.contactDetails__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+.contactDetails__left h2 {
+  font-family: "Playfair Display", serif;
+}
+.contactDetails__left input,
+.contactDetails__left textarea {
+  font-family: "Mulish", sans-serif;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #666666;
+  box-sizing: border-box;
+}
+.contactDetails__left textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.contactDetails__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #d9964a;
+  color: #dedbdb;
+}
+.contactDetails__right h3 {
+  font-family: "Playfair Display", serif;
+}
+.contactDetails__right p {
+  font-family: "Mulish", sans-serif;
+}
+.contactDetails__right {
+  padding: 28px 24px;
+  width: 30%;
+  height: 50%;
+  align-self: stretch;
+}
+
+.recipeBanner {
+  background-color: #f9e9d7;
+  height: 65rem;
+  margin-bottom: 10rem;
+  padding: 4rem 0;
+  position: relative;
+}
+.recipeBanner__wrapper {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.recipeBanner__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: end;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #666666;
+}
+.recipeBanner__title h1 {
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  width: 60%;
+}
+.recipeBanner__title p {
+  padding-bottom: 0.5rem;
+}
+.recipeBanner__subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #666666;
+}
+.recipeBanner__ingredients {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.recipeBanner__ingredients .details {
+  padding: 2rem;
+  background-color: #d9964a;
+  color: #dedbdb;
+}
+.recipeBanner__ingredients .details h3 {
+  padding: 1rem 0;
+}
+.recipeBanner__ingredients .details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recipeBody {
+  padding: 4rem 0;
+}
+.recipeBody h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: "Playfair Display", serif;
+  color: #d9964a;
+}
+.recipeBody h2::after {
+  content: "";
+  flex: 1;
+  height: 0.1rem;
+  background-color: #d9964a;
+}
+.recipeBody__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.recipeBody__left {
+  width: 60rem;
+  padding: 2rem 0;
+}
+.recipeBody__left--steps {
+  text-align: justify;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #666666;
+}
+.recipeBody__left--steps h4,
+.recipeBody__left--steps p {
+  padding: 1rem 0;
+}
+.recipeBody__left--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.recipeBody__left--nav a {
+  color: #666666;
+}
+.recipeBody__left h3 {
+  padding: 2rem 0;
+  font-family: "Playfair Display", serif;
+  color: #d9964a;
+}
+.recipeBody__right--tags {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+.recipeBody__right--tags .tag {
+  display: inline-block;
+  background: #eee;
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  margin: 2px 2px 0 0;
+}
+.recipeBody__right--recipes h3 {
+  font-family: "Playfair Display", serif;
+  padding: 1rem 0;
+  color: #d9964a;
+}
+.recipeBody__right--recipes .cards {
+  padding: unset;
 }
 
 .tns-outer {
